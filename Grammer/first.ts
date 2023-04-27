@@ -1,2 +1,2 @@
-let a: string = "string";
-a = 1234;
+let z: string = "string";
+//z = 1;

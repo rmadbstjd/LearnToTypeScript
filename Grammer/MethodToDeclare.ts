@@ -1,10 +1,3 @@
-const a: string = "5";
-const b: number = 5;
-const c: boolean = false;
-const d: undefined = undefined;
-const e: null = null;
-const f: any = 123;
-
 function add(x: number, y: number): number {
   //매개변수 x와 y의 타입은 number, 리턴 값의 타입도 numebr
   return x + y;
@@ -15,7 +8,11 @@ const add2: (x: number, y: number) => number = (x, y) => x + y;
 // (x: number, y:number) => number 부분이 화살표 함수의 타입이다.
 
 // type으로 타입을 선언하는 방식을 type alias라고 한다.
-type Add = (x: number, y: number) => number;
-const add3: Add = (x, y) => x + y;
+type Add3 = (x: number, y: number) => number;
+const add3: Add3 = (x, y) => x + y;
 
-//const obj: { lat: number; lon: number } = { lat: 37.5, lon: 127.5 };
+// type을 선언하는 또 다른 방법이자  ts의 핵심인 interface
+interface Add4 {
+  (x: number, y: number): number;
+}
+const add4: Add4 = (x, y) => x + y;
