@@ -2,3 +2,6 @@
 //"use strict";
 //let z = "string";
 //z = 1;
+
+let nums = [1, 2, 3];
+let test = [];

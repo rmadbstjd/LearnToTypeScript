@@ -13,4 +13,18 @@ const arr2: Array<number> = [37.5, 127.5]; // <> 제네릭 형식
 const arr3: [number, number, string] = [27, 97, "yunseong"]; //튜플 형식, 길이의 고정하여 제한함.
 
 //객체
-const obj: { age: number; name: string } = { age: 27, name: "yunseong" };
+//세 가지 모두 객체의 타입을 정하는 방벙비다.
+
+const aO: { a: string } = { a: "hello" };
+
+//간단하게 타입을 작성하고 싶으면 type
+type A = { a: string };
+
+const bO: A = { a: "hello" };
+
+//interface는 상속받고 구현 등 객체지향의 개념 등 많은 기능을 지원한다.
+interface C {
+  a: string;
+}
+
+const cO = { a: "hello" };
